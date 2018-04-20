@@ -1,0 +1,4 @@
+/.idea/
+/.pycharm/
+db.sqlite3
+*__pycache__
