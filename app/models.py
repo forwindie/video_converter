@@ -16,3 +16,15 @@ class Query(models.Model):
     objects = models.Manager()
 
 
+class Audio(models.Model):
+    class Meta:
+        db_table = "audio_table"
+
+    title = models.CharField(verbose_name='Название', max_length=300)
+    size = models.IntegerField()
+    download_url = models.TextField()
+    media = models.FileField(upload_to='uploads/', null=True)
+
+    objects = models.Manager()
+
+
